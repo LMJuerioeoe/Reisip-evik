@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Blog - School Assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/header.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem 4rem 2rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        header .meta {
+            margin-top: 1rem;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 900px;
+            margin: -3rem auto 4rem auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Blog Content */
+        article h2 {
+            color: #2c7a7b;
+            font-size: 2rem;
+            margin: 2rem 0 1rem 0;
+        }
+
+        article p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        /* Images in Blog */
+        .blog-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Image Gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Two Column Layout */
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .two-column img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Quote Style */
+        blockquote {
+            border-left: 4px solid #2c7a7b;
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #555;
+            font-size: 1.2rem;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 1rem 0 1rem 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 2rem 1.5rem;
+                margin: -2rem 1rem 2rem 1rem;
+            }
+
+            article h2 {
+                font-size: 1.5rem;
+            }
+
+            article p {
+                font-size: 1rem;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Main Image -->
+    <header>
+        <h1>My Amazing Trip to [Destination]</h1>
+        <p class="subtitle">An Unforgettable Adventure</p>
+        <p class="meta">📍 Location Name | 📅 Month Year | ✍️ Your Name</p>
+    </header>
+
+    <!-- Main Blog Content -->
+    <div class="container">
+        <article>
+            <!-- Introduction -->
+            <h2>Introduction</h2>
+            <p>
+                Write your introduction here. Describe what made you choose this destination, 
+                what you were looking forward to, and your initial impressions. This is where 
+                you set the scene for your travel story.
+            </p>
+
+            <!-- Main Image -->
+            <img src="images/photo1.jpg" alt="First main photo" class="blog-image">
+
+            <!-- Day 1 or First Section -->
+            <h2>Day 1: Arrival and First Impressions</h2>
+            <p>
+                Describe your arrival and first day. What did you see? How did you feel? 
+                What surprised you about the place? Share specific details that make your 
+                story come alive for the reader.
+            </p>
+
+            <!-- Gallery of Multiple Photos -->
+            <div class="image-gallery">
+                <img src="images/photo2.jpg" alt="Photo 2">
+                <img src="images/photo3.jpg" alt="Photo 3">
+                <img src="images/photo4.jpg" alt="Photo 4">
+            </div>
+
+            <!-- Day 2 or Second Section -->
+            <h2>Day 2: Exploring the City</h2>
+            <p>
+                Continue your story. What activities did you do? What places did you visit? 
+                Include interesting facts about the location, funny moments, or challenges you faced.
+            </p>
+
+            <blockquote>
+                "Include a memorable quote from your trip or something someone said that stuck with you."
+            </blockquote>
+
+            <!-- Two Column Image Layout -->
+            <div class="two-column">
+                <img src="images/photo5.jpg" alt="Photo 5">
+                <img src="images/photo6.jpg" alt="Photo 6">
+            </div>
+
+            <!-- Day 3 or Third Section -->
+            <h2>Day 3: The Highlight</h2>
+            <p>
+                What was the best part of your trip? Describe it in detail. This could be 
+                a specific landmark, an activity, meeting someone interesting, or trying 
+                local food. Make the reader feel like they were there with you.
+            </p>
+
+            <img src="images/photo7.jpg" alt="Highlight photo" class="blog-image">
+
+            <!-- Travel Tips or What I Learned -->
+            <h2>Travel Tips & What I Learned</h2>
+            <p>Share practical advice for others who might visit:</p>
+            <ul>
+                <li>Best time to visit and why</li>
+                <li>Must-see attractions or hidden gems</li>
+                <li>Local food you recommend trying</li>
+                <li>Transportation tips</li>
+                <li>Cultural customs to be aware of</li>
+                <li>Budget advice</li>
+            </ul>
+
+            <!-- More Photos -->
+            <div class="image-gallery">
+                <img src="images/photo8.jpg" alt="Photo 8">
+                <img src="images/photo9.jpg" alt="Photo 9">
+                <img src="images/photo10.jpg" alt="Photo 10">
+            </div>
+
+            <!-- Conclusion -->
+            <h2>Conclusion: Reflections on My Journey</h2>
+            <p>
+                Wrap up your blog post. What did this trip mean to you? How did it change you? 
+                Would you return? What will you remember most? End with a thought that leaves 
+                the reader feeling inspired or moved.
+            </p>
+
+            <img src="images/photo11.jpg" alt="Final photo" class="blog-image">
+
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name - School Travel Blog Assignment</p>
+    </footer>
+
+    <script>
+        // Handle missing images with placeholder
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('error', function() {
+                this.style.background = '#e0e0e0';
+                this.style.minHeight = '200px';
+                this.style.display = 'flex';
+                this.style.alignItems = 'center';
+                this.style.justifyContent = 'center';
+                this.style.color = '#999';
+                this.style.fontSize = '1rem';
+                this.alt = '📷 Add your photo here: ' + this.src.split('/').pop();
+            });
+        });
+    </script>
+</body>
+</html>
