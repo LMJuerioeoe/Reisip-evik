@@ -360,10 +360,13 @@
                     Käisime siis õppereisil riigis nimega Leedu. Külastasime Vilniust ja Kaunast.
                 </p>
 
-                <!-- Main Image -->
-                <img src="images/photo1.jpg" alt="First main photo" class="blog-image">
-                <div class="caption">
-                        <p>Varahommikune talvine Eesti</p>
+              <!-- Main Image -->
+<div class="gallery-item" onclick="openLightbox('images/photo1.jpg')">
+    <img src="images/photo1.jpg" alt="First main photo" class="blog-image">
+    <div class="caption">
+        <p>Varahommikune talvine Eesti</p>
+    </div>
+</div>
 
                 <!-- Day 1 or First Section -->
                 <h2>Esimene päev:Külastame Biržai lossi, ning jõuame hilisõhtul Vilniusesse</h2>
@@ -372,17 +375,26 @@
                 </p>
 
                 <!-- Gallery of Multiple Photos -->
-                <div class="image-gallery">
-                    <img src="images/photo2.jpg" alt="Biržai loss">
-                    <div class="caption">
-                        <p>Biržai loss</p>
-                    <img src="images/photo3.jpg" alt="Photo 3">
-                    <div class="caption">
-                        <p>Sild üle Širvėna</p>
-                    <img src="images/photo4.jpg" alt="Photo 4">
-                    <div class="caption">
-                        <p>Öine Vilnius</p>
-                </div>
+              <div class="image-gallery">
+    <div class="gallery-item" onclick="openLightbox('images/photo2.jpg')">
+        <img src="images/photo2.jpg" alt="Biržai loss">
+        <div class="caption">
+            <p>Biržai loss</p>
+        </div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('images/photo3.jpg')">
+        <img src="images/photo3.jpg" alt="Photo 3">
+        <div class="caption">
+            <p>Sild üle Širvėna</p>
+        </div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('images/photo4.jpg')">
+        <img src="images/photo4.jpg" alt="Photo 4">
+        <div class="caption">
+            <p>Öine Vilnius</p>
+        </div>
+    </div>
+</div>
 
                 <!-- Day 2 or Second Section -->
                 <h2>Day 2: Exploring the City</h2>
@@ -609,6 +621,7 @@
     </script>
 </body>
 </html>
+
 
 
 
